@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2019",                 // Modern JS output
+    "module": "commonjs",               // Node-friendly modules
+    "rootDir": "./src",                 // Your source folder
+    "outDir": "./dist",                 // Output compiled JS & declarations
+    "declaration": true,                // Generate .d.ts files
+    "declarationMap": true,             // Optional: source maps for types
+    "esModuleInterop": true,            // For default import compatibility
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                     // Strict type checking
+    "skipLibCheck": true,               // Skip checking node_modules types
+    "lib": ["esnext", "dom"],           // ES + browser globals (console, fetch, etc.)
+    "moduleResolution": "node",         // Resolve modules like Node
+    "resolveJsonModule": true           // Allows importing JSON files
+  },
+  "include": ["src/**/*"],              // Include all TS files in src
+  "exclude": ["dist", "node_modules"]   // Exclude build output & dependencies
+}

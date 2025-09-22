@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "backend",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-09-10",
+
+  // For conn. pooling this string works....
+  "vars": {
+  "DATABASE_URL":"prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqd3RfaWQiOjEsInNlY3VyZV9rZXkiOiJza19OaHBEb3I1ZXVZX05GUlBEUWtJTk0iLCJhcGlfa2V5IjoiMDFLNTQ2WFlRRDVWR0JBMjQ1V0JFWFNQQU0iLCJ0ZW5hbnRfaWQiOiI3ZTg4NTJhNmNjMDAzMWY4YmQ5ZDlhZmU3YTNkZTZkNjgwZTgwNWJjZGMwYzFiY2YzNTI0YTEyNjQxZDBiMzRhIiwiaW50ZXJuYWxfc2VjcmV0IjoiYjY5NDlkNjItNmU5Yy00NTI3LWI2NDItZWJmY2VkNTMwZTg3In0.UPWBFGqER8Bg_iYJpE6xS7NiZtCX7KNxoKQEehMek3g",
+    "JWT_SECRET": "nedstark"
+  }
+  
+}
